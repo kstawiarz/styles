@@ -1,0 +1,129 @@
+{
+  "items": [
+    {
+      "id": "1",
+      "name": "DISCUSSION_FORUMS",
+      "iconUrl": "./assets/icons/chat_bubble-24px.svg",
+      "links": [
+        {
+          "id": "1",
+          "name": "CONSTRUCTION_FORUM",
+          "url": "www.construction-forum.com"
+        },
+        {
+          "id": "2",
+          "name": "INSTALLATION_FORUM",
+          "url": "www.installation-forum.com"
+        },
+        {
+          "id": "3",
+          "name": "REAL_ESTATE_FORUM",
+          "url": "www.real-estate-forum.com"
+        },
+        {
+          "id": "4",
+          "name": "NEWS_FORUM",
+          "url": "www.news-forum.com"
+        }
+      ]
+    },
+    {
+      "id": "2",
+      "name": "RESOURCES",
+      "iconUrl": "./assets/icons/folder-24px.svg",
+      "links": [
+        {
+          "id": "1",
+          "name": "OFFICE_APPS",
+          "url": "https://www.microsoft.com"
+        },
+        {
+          "id": "2",
+          "name": "ONE_DRIVE",
+          "url": "https://www.microsoft.com"
+        },
+        {
+          "id": "3",
+          "name": "OUTLOOK",
+          "url": "https://www.microsoft.com"
+        },
+        {
+          "id": "4",
+          "name": "SHARE_POINT",
+          "url": "https://www.microsoft.com"
+        },
+        {
+          "id": "5",
+          "name": "YAMMER",
+          "url": "https://www.microsoft.com"
+        }
+      ]
+    },
+    {
+      "id": "3",
+      "name": "PROJECTS",
+      "iconUrl": "./assets/icons/business_center-24px.svg",
+      "links": [
+        {
+          "id": "1",
+          "name": "OFFICES",
+          "url": "www.google.com"
+        },
+        {
+          "id": "2",
+          "name": "TRADE",
+          "url": "www.google.com"
+        },
+        {
+          "id": "3",
+          "name": "HOTELS",
+          "url": "www.google.com"
+        },
+        {
+          "id": "4",
+          "name": "CULTURE_AND_EDUCATION",
+          "url": "www.google.com"
+        },
+        {
+          "id": "5",
+          "name": "FLATS",
+          "url": "www.google.com"
+        },
+        {
+          "id": "6",
+          "name": "INDUSTRY",
+          "url": "www.google.com"
+        },
+        {
+          "id": "7",
+          "name": "SPORT",
+          "url": "www.google.com"
+        }
+      ]
+    },
+    {
+      "id": "4",
+      "name": "PARTNERSHIPS",
+      "iconUrl": "./assets/icons/work-24px.svg",
+      "links": [
+        {
+          "id": "1",
+          "name": "LOREM_IPSUM",
+          "url": "www.google.com"
+        }
+      ]
+    },
+    {
+      "id": "5",
+      "name": "IMPORTANT",
+      "iconUrl": "./assets/icons/bookmark-24px.svg",
+      "links": [
+        {
+          "id": "1",
+          "name": "ADVERTISEMENTS",
+          "url": "www.google.com"
+        }
+      ]
+    }
+  ]
+}

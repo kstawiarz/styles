@@ -1,0 +1,11 @@
+<app-loading [loading]="loading"></app-loading>
+<div class="categories__wrapper"
+     fxLayout
+     fxLayout.xs="column"
+     fxLayoutAlign="center"
+     fxLayoutAlign.gt-md="start"
+     fxLayoutGap="0"
+     fxLayoutGap.xs="0">
+  <app-categories-card *ngFor="let category of categories?.items" [category]="category"></app-categories-card>
+</div>
+
