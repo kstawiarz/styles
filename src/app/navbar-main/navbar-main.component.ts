@@ -13,28 +13,32 @@ export class NavbarMainComponent {
 
   links: NavigationLinkModel[] = [
     {
-      title: 'Strona główna',
+      title: 'Homepage',
       url: '/home'
     },
     {
-      title: 'Wiadomości',
+      title: 'News',
       url: '/news'
     },
     {
-      title: 'Departamenty',
+      title: 'Departments',
       url: '/departments'
     },
     {
-      title: 'Niezbędnik',
-      url: '/toolkit'
+      title: 'Toolbox',
+      url: '/toolbox'
     },
     {
-      title: 'Ogłoszenia',
-      url: '/advertisements'
+      title: 'Announcements',
+      url: '/announcements'
     },
     {
-      title: 'Sekcje',
+      title: 'Sections',
       url: '/sections'
+    },
+    {
+      title: 'About',
+      url: '/about'
     },
   ];
 

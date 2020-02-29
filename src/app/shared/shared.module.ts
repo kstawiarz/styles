@@ -17,19 +17,30 @@ import { HttpClient, HttpClientModule } from '@angular/common/http';
 import { TranslateHttpLoader } from '@ngx-translate/http-loader';
 import { FlexLayoutModule } from '@angular/flex-layout';
 import { MaterialDesignModule } from './material-design/material-design.module';
+import { LogoComponent } from './components/logo/logo.component';
+import { NavigationLinksComponent } from './components/navigation-links/navigation-links.component';
+import { RouterModule } from '@angular/router';
+import { FooterComponent } from './components/footer/footer.component';
 
 export function createTranslateLoader(http: HttpClient) {
   return new TranslateHttpLoader(http, './assets/i18n/', '.json');
 }
 
 @NgModule({
-  declarations: [SearchInputComponent, LoadingComponent],
+  declarations: [
+    SearchInputComponent,
+    LoadingComponent,
+    LogoComponent,
+    NavigationLinksComponent,
+    FooterComponent
+  ],
   imports: [
     CommonModule,
     MaterialDesignModule,
     HttpClientModule,
     TranslateModule.forChild(),
-    FlexLayoutModule
+    FlexLayoutModule,
+    RouterModule
   ],
   exports: [
     CommonModule,
@@ -37,7 +48,10 @@ export function createTranslateLoader(http: HttpClient) {
     SearchInputComponent,
     LoadingComponent,
     FlexLayoutModule,
-    TranslateModule
+    TranslateModule,
+    LogoComponent,
+    NavigationLinksComponent,
+    FooterComponent
   ],
 })
 export class SharedModule {

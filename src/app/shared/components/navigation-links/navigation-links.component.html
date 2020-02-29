@@ -1,0 +1,16 @@
+<ng-container *ngIf="isMobile; then mobileBlock else desktopBlock"></ng-container>
+<ng-template #mobileBlock>
+  <a href="#" *ngFor="let link of links; let i = index"
+     mat-list-item
+     [routerLink]="link.url"
+     [routerLinkActive]="'isActive'">
+    {{link.title | translate}}
+  </a>
+</ng-template>
+<ng-template #desktopBlock>
+  <a href="#" *ngFor="let link of links; let i = index"
+     [routerLink]="link.url"
+     [routerLinkActive]="'isActive'">
+    {{link.title | translate}}
+  </a>
+</ng-template>

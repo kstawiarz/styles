@@ -1,0 +1,13 @@
+.card {
+  height: 100%;
+  width: 30vw;
+}
+
+.card__wrapper {
+  justify-content: space-around;
+  width: 100%;
+  margin: 24px;
+  display: inline-flex;
+  flex-flow: row wrap;
+  background: grey;
+}

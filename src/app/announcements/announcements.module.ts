@@ -1,22 +1,20 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { RouterModule, Routes } from '@angular/router';
-import { HomeMainComponent } from './home-main/home-main.component';
+import { AnnouncementsMainComponent } from './announcements-main/announcements-main.component';
 
 const routes: Routes = [
   {
-    path: '',
-    component: HomeMainComponent,
-    pathMatch: 'full'
+    path: '', component: AnnouncementsMainComponent, pathMatch: 'full'
   }
 ];
 
 @NgModule({
-  declarations: [HomeMainComponent],
+  declarations: [AnnouncementsMainComponent],
   imports: [
     CommonModule,
     RouterModule.forChild(routes)
   ]
 })
-export class HomeModule {
+export class AnnouncementsModule {
 }

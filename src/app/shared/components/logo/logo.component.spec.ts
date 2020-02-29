@@ -1,20 +1,20 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { ToolkitMainComponent } from './toolkit-main.component';
+import { LogoComponent } from './logo.component';
 
-describe('ToolkitMainComponent', () => {
-  let component: ToolkitMainComponent;
-  let fixture: ComponentFixture<ToolkitMainComponent>;
+describe('LogoComponent', () => {
+  let component: LogoComponent;
+  let fixture: ComponentFixture<LogoComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ToolkitMainComponent]
+      declarations: [ LogoComponent ]
     })
-      .compileComponents();
+    .compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(ToolkitMainComponent);
+    fixture = TestBed.createComponent(LogoComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

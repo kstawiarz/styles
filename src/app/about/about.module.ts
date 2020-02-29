@@ -1,20 +1,19 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { AboutMainComponent } from './about-main/about-main.component';
 import { RouterModule, Routes } from '@angular/router';
-import { AdsMainComponent } from './ads-main/ads-main.component';
 
 const routes: Routes = [
   {
-    path: '', component: AdsMainComponent, pathMatch: 'full'
+    path: '', component: AboutMainComponent, pathMatch: 'full'
   }
 ];
 
 @NgModule({
-  declarations: [AdsMainComponent],
+  declarations: [AboutMainComponent],
   imports: [
     CommonModule,
     RouterModule.forChild(routes)
   ]
 })
-export class AdsModule {
-}
+export class AboutModule { }

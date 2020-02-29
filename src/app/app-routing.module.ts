@@ -5,6 +5,11 @@ import { HomeMainComponent } from './home/home-main/home-main.component';
 
 const routes: Routes = [
   {
+    path: '',
+    redirectTo: 'home',
+    pathMatch: 'full'
+  },
+  {
     path: 'home',
     component: HomeMainComponent
   },
@@ -17,16 +22,20 @@ const routes: Routes = [
     loadChildren: () => import('./departments/departments.module').then(module => module.DepartmentsModule)
   },
   {
-    path: 'toolkit',
-    loadChildren: () => import('./toolkit/toolkit.module').then(module => module.ToolkitModule)
+    path: 'toolbox',
+    loadChildren: () => import('./toolbox/toolbox.module').then(module => module.ToolboxModule)
   },
   {
-    path: 'advertisements',
-    loadChildren: () => import('./ads/ads.module').then(module => module.AdsModule)
+    path: 'announcements',
+    loadChildren: () => import('./announcements/announcements.module').then(module => module.AnnouncementsModule)
   },
   {
     path: 'sections',
     loadChildren: () => import('./sections/sections.module').then(module => module.SectionsModule)
+  },
+  {
+    path: 'about',
+    loadChildren: () => import('./about/about.module').then(module => module.AboutModule)
   }
 ];
 
