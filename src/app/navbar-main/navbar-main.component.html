@@ -29,7 +29,11 @@
       </div>
       <span class="spacer"></span>
       <div class="toolbar__search-area">
-        <app-search-input></app-search-input>
+        <app-search-input *ngIf="searchForm"></app-search-input>
+        <button mat-icon-button aria-label="Toggle search icon" (click)="searchForm = !searchForm">
+          <mat-icon *ngIf="!searchForm">search</mat-icon>
+          <mat-icon *ngIf="searchForm">youtube_searched_for</mat-icon>
+        </button>
       </div>
     </mat-toolbar>
     <section class="main-content">

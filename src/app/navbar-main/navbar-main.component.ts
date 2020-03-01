@@ -10,6 +10,7 @@ import { NavigationLinkModel } from '../shared/models/navigation-links.model';
   styleUrls: ['./navbar-main.component.scss']
 })
 export class NavbarMainComponent {
+  searchForm = true;
 
   links: NavigationLinkModel[] = [
     {
