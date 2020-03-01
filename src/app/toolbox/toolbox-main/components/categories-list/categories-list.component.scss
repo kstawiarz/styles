@@ -1,33 +1,56 @@
+@import './src/assets/styles/mixins';
+
 .wrapper {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
-  //overflow: hidden;
-  //background: #DEE1E6;
-  padding: 24px;
+  flex-direction: column;
+  padding: 0.5rem;
+
+  @include res(tab) {
+    padding: 1rem;
+  }
+
+  @include res(desktop) {
+    flex-direction: row;
+  }
 }
 
 .sidenav {
-  flex: 1;
+  width: 240px;
+  max-width: 100%;
 }
 
 .main-column {
   display: flex;
-  flex-wrap: wrap;
-  max-width: 80%;
+  flex-direction: column;
 
-/*  flex-wrap: wrap;
-  @media (min-width: 1900px) {
-    justify-content: flex-start;
-    flex: 4;
-  }*/
+  @include res(phone) {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  @include res(desktop) {
+    padding-left: 1rem;
+    flex: 1;
+  }
 }
 
-@media (max-width: 620px) {
-/*  .wrapper {
-    flex-direction: column;
-    align-items: center;
-  }*/
+.card {
+  display: block;
+  width: 100%;
+  padding: 0.5rem;
+
+  @include res(phone) {
+    width: 50%;
+  }
+
+  @include res(desktop) {
+    width: 33.333333%;
+  }
+
+  @include res(wide) {
+    width: 20%;
+    max-width: 360px;
+  }
 }
 
 

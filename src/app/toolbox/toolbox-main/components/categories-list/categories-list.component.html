@@ -4,6 +4,6 @@
   </div>
   <div class="main-column">
     <app-loading *ngIf="loading" [loading]="loading"></app-loading>
-    <app-categories-card fxLayoutAlign="stretch" *ngFor="let category of categories?.items" [category]=category></app-categories-card>
+    <app-categories-card class="card" *ngFor="let category of categories?.items" [category]=category></app-categories-card>
   </div>
 </div>

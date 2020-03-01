@@ -1,14 +1,20 @@
-.footer__wrapper {
-  background: #F4F7FC;
-  max-height: 50px;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  padding: 1rem;
-  text-align: center;
-  position: fixed;
-  @media screen and (min-width: 960px) {
-  position: absolute;
+@import './src/assets/styles/mixins';
 
+.footer{
+  background: #F4F7FC;
+  display: flex;
+  flex-direction: column;
+  padding: 0.5rem;
+
+  @include res(phone) {
+    padding: 1rem;
+  }
+
+  @include res(phone) {
+    flex-direction: row;
+  }
+
+  @include res(desktop) {
+    justify-content: space-between;
   }
 }
