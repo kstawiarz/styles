@@ -1,3 +1,5 @@
+@import './src/assets/styles/mixins';
+
 .sidenav-container {
   height: 100%;
 }
@@ -44,13 +46,25 @@
   }
 
   &__search-area {
-    display: none;
-    @media (min-width: 400px) {
-      display: flex;
-      align-items: center;
-      font-size: 16px;
+    display: flex;
+    align-items: center;
+
+    .hide {
+      display: none;
+
+      @include res(desktop) {
+        display: block;
+      }
+
     }
   }
+
+  &__search-button {
+    @include res(desktop) {
+      display: none;
+    }
+  }
+
   &__logo {
     margin-right: 24px;
   }
